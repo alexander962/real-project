@@ -1,0 +1,205 @@
+//possibilities
+.possibilities
+  margin-top: 35px
+
+  img
+    pointer-events: none
+
+  @media (min-width: 1200px)
+    .container, .container-lg, .container-md, .container-sm, .container-xl 
+      max-width: 1240px
+
+  &_img
+    &-mobile
+      display: none
+  .container
+    text-align: center
+
+    .headline
+      display: block
+      font-family: Comfortaa
+      font-style: normal
+      font-weight: bold
+      font-size: 22px
+      text-transform: uppercase
+      color: #FFFFFF
+
+  &_main
+    padding: 0 94px
+    margin-top: 130px
+  
+  &_block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 68px
+
+    &__text
+
+      &-last
+        margin-right: 49px
+
+      h3
+        font-family: Comfortaa
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        color: #FFFFFF
+        margin-bottom: 30px
+        text-align: left
+      
+      ul
+        position: relative
+        text-align: left
+        margin-left: 0
+        padding-left: 0
+        list-style-type: none
+
+        button
+          position: absolute
+          right: 0
+          bottom: 0
+          background: transparent
+          font-family: Montserrat
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          color: #FFFFFF
+          padding: 5px 8px
+          border: 2px solid #FE2363
+          box-sizing: border-box
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+          border-radius: 6px
+          z-index: 9
+        
+        .possibilities_ellips-btn
+          position: relative
+          
+        .possibilities_ellips-btn::after
+          content: ""
+          position: absolute
+          width: 444px
+          height: 298px
+          top: -170px
+          left: 170px
+          z-index: 1
+          background: radial-gradient(50% 50% at 50% 50%, #252366 0%, #201B55 46.16%, rgba(31, 24, 70, 0) 100%)
+
+        .possibilities_ellips-mobile
+          display: none
+
+        li
+          font-family: Comfortaa
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 150%
+          color: #FFFFFF
+          position: relative
+          padding-left: 20px
+          margin-bottom: 12px
+          z-index: 9
+
+          &:before 
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 0
+            width: 10px
+            height: 4px
+            background: #FE2363
+            border-radius: 4px
+
+@media(max-width: 1200px)
+  .possibilities
+    &_main
+      padding: 0 40px
+
+    &_block
+      &__text
+        ul
+          .possibilities_ellips
+            width: 200px
+            bottom: -60px
+            right: -60px
+
+
+@media(max-width: 990px)
+  .possibilities
+    margin-top: 64px
+
+    &_img
+      display: none
+      &-mobile
+        display: block
+        margin-bottom: 29px
+
+    &_block
+      &__text
+        ul
+          .possibilities_ellips-btn::after
+            top: -50px
+            left: 0
+
+    &_main
+      padding: 0 0px
+      margin-top: 60px
+  
+    &_block
+      flex-direction: column
+      align-items: center
+
+      &:nth-child(1)
+        flex-direction: column-reverse
+      &:nth-child(3)
+        flex-direction: column-reverse
+      
+      &__text
+
+        &-last
+        margin-right: 0
+
+        h3
+          font-size: 20px
+          margin-bottom: 21px
+          text-align: center
+
+        ul
+          .possibilities_ellips
+            display: none
+
+          .possibilities_ellips-mobile
+            display: block
+            position: absolute
+            bottom: -100px
+            left: 50%
+            transform: translate(-50%, 0)
+            z-index: -1
+
+          button
+            position: relative
+            width: 100%
+            margin-top: 65px
+            font-size: 18px
+
+    &_img
+      margin-bottom: 29px
+
+@media(max-width: 450px)
+  .possibilities
+    margin-top: 64px
+
+    &_block
+      &__text
+        ul
+          .possibilities_ellips-btn::after
+            top: -50px
+            left: -50px
+
+@media(max-width: 400px)
+  .possibilities
+    margin-top: 64px
+    &_block
+      &_img
+        width: 300px

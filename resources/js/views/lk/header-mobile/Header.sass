@@ -1,0 +1,181 @@
+// header
+.header-mobile
+  display: none
+
+@media(max-width: 1024px)
+  .main 
+    margin-bottom: 50px
+    .header
+      position: relative
+      padding: 40px 17px 0 17px
+
+      .avatar
+        width: 70px
+        height: 70px
+
+      &-main
+        width: 100%
+        ul.nav
+          display: none
+
+      &-btns
+        display: none
+
+      .logo
+        display: none
+        margin: 0
+
+      &-mobile
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .logo
+          display: block
+          font-size: 30px
+        .humberger
+          width: 40px
+          height: 40px
+  
+@media(max-width: 767px)
+  .main 
+    margin-bottom: 34px
+    .header
+      .avatar
+        width: 32px
+        height: 32px
+      .humberger
+        width: 24px
+        height: 18px  
+  .container 
+    padding: 0
+  
+
+@media(max-width: 600px) 
+  .main .header-mobile .logo 
+    font-size: 24px
+
+  .main .header-mobile .humberger
+    width: 24px
+    height: 18px
+  
+  
+
+
+//profile-widget
+.profile-widget 
+  width: 320px
+  margin: 50px auto 0 auto
+
+.profile-widget_el 
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  width: 90%
+  margin-bottom: 25px
+  color: #9fa1b7
+
+  span
+    font-family: Rubik
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    color: #9FA1B7
+
+
+.profile-widget_el:last-child 
+  margin-bottom: 46px
+
+.profile-widget_block 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  padding: 40px 20px
+  background-color: #3b3c72
+  border-radius: 6px
+
+.profile-widget_block__none 
+  display: none
+
+@media(max-width: 390px) 
+  .profile-widget 
+    width: 100%
+
+    button
+      width: 80%
+
+// mobile-menu
+.modal-menu
+  width: 100vw
+  height: 100vh
+  text-align: center
+  background: #3B3C72
+  padding: 43px 0 0 0 
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 999
+
+  &_main
+    position: relative
+    width: 300px
+    margin: 0 auto
+
+  &_logo
+    display: inline-block
+  
+  &_nav
+    list-style-type: none
+    text-align: left
+    padding: 0
+    margin-top: 75px
+
+    li
+      display: flex
+      align-items: center
+      font-family: Rubik
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      color: #B4B8ED
+      margin-bottom: 20px
+
+      span
+        margin-left: 20px
+
+      .modal-menu_balance
+        margin-left: 113px
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #B4B8ED
+
+  &_reg-btn
+    padding: 11px 74px
+    background: transparent
+    border: 2px solid #FE2363
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    border-radius: 6px
+    font-family: Comfortaa
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    color: #FFFFFF
+    margin-top: 61px
+  
+  &_sign
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    margin-top: 25px
+  
+  &_close
+    position: absolute
+    top: 5px
+    left: 0
+  

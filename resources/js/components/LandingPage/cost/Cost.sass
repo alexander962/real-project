@@ -1,0 +1,222 @@
+// cost
+.cost
+  width: 100%
+  margin-top: 112px
+
+  @media (min-width: 1200px)
+    .container, .container-lg, .container-md, .container-sm, .container-xl 
+      max-width: 1240px
+
+  &-img
+    margin-left: 25px
+    position: relative
+    width: 100%
+    text-align: left
+    width: 95px
+    height: 85px
+    img
+      position: relative
+      z-index: 9
+      width: 100%
+      height: 100%
+
+  &-img::after
+    content: ""
+    position: absolute
+    width: 266px
+    height: 236px
+    top: -80px
+    left: -80px
+    background: radial-gradient(50% 50% at 50% 50%, #252366 0%, #201B55 46.16%, rgba(31, 24, 70, 0) 100%)
+    z-index: 1
+    
+
+
+  .container
+    text-align: center
+
+    .headline
+        display: block
+        font-family: Comfortaa
+        font-style: normal
+        font-weight: bold
+        font-size: 22px
+        text-transform: uppercase
+        color: #FFFFFF
+  
+  &-blue
+    position: relative
+    width: 870px
+    background: #241E47 url("../../../assets/img/cost-border-1.svg") no-repeat center center
+    margin: 85px auto 0 auto
+    padding: 20px
+    z-index: 9
+ 
+  &-pink
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #241E47 url("../../../assets/img/cost-border-2.svg") no-repeat center
+    padding: 50px 45px
+    z-index: 9
+  
+    &_left
+      text-align: left
+      max-width: 250px
+
+      hr
+        max-width: 229px
+        height: 3px 
+        background: #564EA4
+        margin: 23px 0
+
+      h3
+        font-family: Comfortaa
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 150%
+        text-transform: uppercase
+        background: linear-gradient(to right, rgba(255, 22, 120, 1), rgba(226, 0, 95, 1))
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+      p
+        font-family: Comfortaa
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #FFFFFF
+
+    &_center
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 205px
+      height: 205px
+      background: #241E47 url("../../../assets/img/cost-border-3.svg") no-repeat center
+      box-sizing: border-box
+      vertical-align: middle
+
+    &_right
+      width: 242px
+      text-align: left
+      margin-left: 20px
+
+      hr
+        max-width: 229px
+        height: 3px 
+        background: #564EA4
+        margin: 23px 0
+
+      p
+        position: relative
+        font-family: Comfortaa
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #FFFFFF
+        padding-left: 17px
+        &::before
+          content: ''
+          position: absolute
+          top: 9px
+          left: 0
+          width: 5px
+          height: 5px
+          background: #fff
+          border-radius: 50%
+
+@media(max-width: 990px)
+  .cost
+    margin-top: 50px
+
+    .headline
+      position: relative
+      z-index: 9
+
+    &-img
+      position: relative
+      width: 100%
+      text-align: left
+      width: 65px
+      height: 57px
+      margin-left: 0
+      margin-top: 49px
+
+    &-blue
+      width: 330px
+      height: 685px
+      background: #241E47 url("../../../assets/img/cost-mobile-border-1.svg") no-repeat center center
+      padding: 12px
+
+    &-pink
+      flex-direction: column
+      justify-content: center
+      align-items: space-between
+      padding: 20px
+      background: #241E47 url("../../../assets/img/cost-mobile-border-2.svg") no-repeat center
+
+      &_left
+        max-width: 100%
+        text-align: center
+        margin-bottom: 20px
+        padding: 0 18px
+
+        h3
+          font-size: 26px
+          margin-top: 10px
+
+        hr
+          text-align: center
+          max-width: 100%
+          width: 100%
+          height: 3px 
+          background: #564EA4
+          margin: 15px 0
+          clear: both
+
+        p
+          text-align: left
+      &_center
+        width: 141px
+        height: 141px
+        margin-bottom: 25px
+        background: #241E47 url("../../../assets/img/cost-mobile-border-3.svg") no-repeat center
+      
+        img
+          width: 85px
+          height: 65px
+        
+      &_right
+        width: 100%
+        margin-left: 0
+        padding: 0 18px
+
+        hr
+          max-width: 100%
+          width: 100%
+          height: 3px 
+          background: #564EA4
+          margin: 15px 0
+          clear: both
+
+@media(max-width: 340px)
+  .container
+    padding: 0
+
+  .cost
+    &-blue
+      width: 320px
+      height: 685px
+      background: #241E47 url("../../../assets/img/cost-mobile-border-1.svg") no-repeat center center
+      padding: 12px
+
+    &-pink
+      flex-direction: column
+      justify-content: center
+      align-items: space-between
+      padding: 16px
+      background: #241E47 url("../../../assets/img/cost-mobile-border-2.svg") no-repeat center

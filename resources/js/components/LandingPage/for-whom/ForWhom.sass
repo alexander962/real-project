@@ -1,0 +1,181 @@
+// for-whom
+.for-whom-mobile
+  display: none
+
+.container
+  max-width: 1200px
+
+.for-whom
+  width: 100%
+  text-align: center
+  margin-top: 184px
+
+  .headline
+    position: relative
+    z-index: 9
+    display: block
+    font-family: Comfortaa
+    font-style: normal
+    font-weight: bold
+    font-size: 22px
+    text-transform: uppercase
+    color: #FFFFFF
+    margin-bottom: 95px
+  
+  &_main
+    position: relative
+    display: flex
+    justify-content: space-between
+
+  &_elips
+    position: absolute
+    top: 150px
+    left: -110px
+    width: 1378px
+    height: 298px
+    background: radial-gradient(50% 50% at 50% 50%, #050125 0%, rgba(16, 5, 77, 0) 100%)
+    overflow:hidden
+    filter: blur(8px)
+  
+  &_block
+    position: relative
+    width: 360px
+    height: 310px
+    background: linear-gradient(120.1deg, #413A80 13.95%, #483F8B 61.61%, #584CA6 85.65%)
+    border-radius: 10px
+    padding: 34px 0 0 0
+    text-align: center
+    &:nth-child(2)
+      p
+        width: 215px
+        margin-bottom: 0
+        margin-left: 52px
+    &:nth-child(3)
+      p
+        width: 215px
+        margin-bottom: -5px
+        margin-left: 55px
+    &:nth-child(4)
+      p
+        width: 220px
+        margin-bottom: 8px
+        margin-left: 58px
+
+    p
+      text-align: left
+      font-family: Rubik
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 150%
+      color: #DBE9E2
+
+    h3
+      font-family: Comfortaa
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      color: #FFFFFF
+      margin-bottom: 23px
+
+@media(max-width: 1200px)
+  .container
+    max-width: 960px
+  .for-whom
+    &_block
+      width: 280px
+      height: 280px
+      padding: 20px 0 0 0
+      &:nth-child(2)
+        p
+          width: 240px
+          margin-bottom: 0
+          margin-left: 20px
+      &:nth-child(3)
+        p
+          width: 240px
+          margin-bottom: 0
+          margin-left: 20px
+      &:nth-child(4)
+        p
+          width: 260px
+          margin-bottom: 0
+          margin-left: 20px
+
+    p
+      font-size: 18px
+
+    h3
+      font-size: 22px
+
+@media(max-width: 990px)
+  .for-whom
+    display: none
+    
+  .for-whom-mobile
+    display: block
+    width: 100%
+    text-align: center
+    margin-top: 103px
+
+    .headline
+      display: block
+      font-family: Comfortaa
+      font-style: normal
+      font-weight: bold
+      font-size: 22px
+      text-transform: uppercase
+      color: #FFFFFF
+      margin-bottom: 95px
+    
+    &_block
+      width: 280px !important
+      height: 280px
+      background: linear-gradient(120.1deg, #413A80 13.95%, #483F8B 61.61%, #584CA6 85.65%)
+      border-radius: 10px
+      padding: 20px 0 0 0
+      text-align: center
+      margin: 0 10px 0 10px
+
+      p
+        width: 250px
+        margin-left: 20px
+        text-align: left
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #DBE9E2
+
+      h3
+        font-family: Comfortaa
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        color: #FFFFFF
+        margin-bottom: 23px
+
+      img
+        width: 200px
+        height: 200px
+        margin: -22px auto 0 auto
+    
+  .slick
+    display: flex
+    height: 345px
+
+@media(max-width: 340px)
+  .for-whom-mobile
+    &_block
+      width: 260px !important
+      height: 280px
+      margin: 0 0px 0 0px
+
+      p
+        margin-left: 12px
+
+      img
+        width: 200px
+        height: 200px
+        margin: -22px auto 0 auto

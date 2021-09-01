@@ -1,0 +1,240 @@
+// questions
+.questions
+  margin-top: 20px
+
+  img
+    pointer-events: none
+
+  @media (min-width: 1200px)
+    .container, .container-lg, .container-md, .container-sm, .container-xl 
+      max-width: 1240px
+
+  .container
+    text-align: center
+
+  .headline
+    font-family: Comfortaa
+    font-style: normal
+    font-weight: bold
+    font-size: 22px
+    line-height: 25px
+    text-transform: uppercase
+
+    color: #FFFFFF
+    position: relative
+    z-index: 9
+
+  &-footer_gradient
+    background: linear-gradient(354.87deg, #030017 0%, #241E47 91.93%)
+
+  &-main
+    margin-top: 107px
+
+    &_number-false
+      min-width: 56px
+      font-family: Comfortaa
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 54px
+      color: #413A80
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      margin-right: 17px
+      margin-top: 14px
+      margin-bottom: 0
+
+    &_number-true
+      min-width: 56px
+      font-family: Comfortaa
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 54px
+      color: #FE2363
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      margin-right: 17px
+      margin-top: 14px
+      margin-bottom: 0
+
+    &_block
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      margin-bottom: 50px
+
+      &-inner
+        width: 830px
+        box-sizing: border-box
+
+        &__1
+          position: relative
+          display: flex
+          align-items: center
+          justify-content: space-between
+          padding: 23px 27px
+          background: #413A80
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+          border-radius: 6px
+          cursor: pointer
+          z-index: 999
+          -moz-user-select: none
+          -khtml-user-select: none
+          -webkit-user-select: none
+          user-select: none
+
+          p
+            max-width: 90%
+            word-wrap: break-word
+            font-family: Comfortaa
+            font-style: normal
+            font-weight: bold
+            font-size: 25px
+            line-height: 28px
+            color: #FFFFFF
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+            margin: 0
+            text-align: left
+
+        &__2
+          position: relative
+          text-align: left
+          background: #413A80
+          border-radius: 0 0 6px 6px
+          padding: 22px 0 40px 28px
+          z-index: 5
+          margin-top: -5px
+          p
+            font-family: Rubik
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 24px
+            color: #FFFFFF
+
+@media(max-width: 990px)
+  .questions
+    margin-top: 7px
+
+    &-main
+      margin-top: 69px
+
+      &_number-false
+        font-size: 22px
+        margin-right: -10px
+      
+      &_number-true
+        font-size: 22px
+        margin-right: -10px
+
+      &_block
+        margin-bottom: 20px
+        margin-left: -20px
+
+        &-inner
+          width: 90%
+          box-sizing: border-box
+
+          &__1
+
+            p
+              font-size: 24px
+
+          &__2
+
+            p
+              font-size: 20px
+
+@media(max-width: 500px)
+  .questions
+    &-main
+
+      &_number-false
+        font-size: 14px
+        margin-top: 0px
+      
+      &_number-true
+        font-size: 14px
+        margin-top: 0px
+      
+      &_block
+        margin-bottom: 20px
+
+        &-inner
+          width: 90%
+          box-sizing: border-box
+
+          &__1
+            padding: 10px
+
+            p
+              font-size: 16px
+
+            img
+              width: 14px
+              height: 14px
+
+          &__2
+
+            p
+              font-size: 14px
+
+// footer
+.footer
+  width: 100%
+  margin-top: 52px
+
+  .container
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding-bottom: 108px
+
+  hr
+    display: none
+
+  &_confidentiality
+    cursor: pointer
+
+  &_text
+    font-family: Comfortaa
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+    text-transform: uppercase
+    color: #FFFFFF
+    text-align: left
+
+  &_block
+    text-align: right
+
+@media(max-width: 990px)
+  .footer
+    margin-top: 39px
+
+    .container
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+    hr
+      display: block
+      width: 100%
+      height: 3px
+      margin: 25px 0 34px 0 
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+
+    &_text
+      text-align: center
+      margin-top: 59px
+
+    &_block
+      text-align: center
+      margin-top: 0
+
+    &_img
+      order: -1
+
+      img
+        width: 209px
